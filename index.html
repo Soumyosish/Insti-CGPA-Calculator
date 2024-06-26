@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insti CGPA Calculator</title>
+    <link rel="shortcut icon" href="calculator-icon-logo-free-vector.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CGPA Calculator</h1>
+    <div class="container-1">
+        <h3 class="header-1">This CGPA calculator is based on University Grading System</h3>
+        <div class="course-div">
+            <form class="get" id="main-form">
+                <div class="form-row">
+                    <label for="courses" class="form-label">Course Code:</label>
+                    <input type="text" placeholder="Enter the course code" class="courses" required>
+                </div>
+                <div class="form-row">
+                    <label for="course-unit" class="form-label">Course Unit:</label>
+                    <input type="number" placeholder="Enter the course unit" class="course-unit" required>
+                </div>
+                <div class="form-row">
+                    <label for="course-grade" class="form-label">Course Grade:</label>
+                    <select class="grade">
+                        <option value="select" class="grade">Select</option>
+                        <option value="O" class="grade">O</option>
+                        <option value="A+" class="grade">A+</option>
+                        <option value="A" class="grade">A</option>
+                        <option value="B+" class="grade">B+</option>
+                        <option value="B" class="grade">B</option>
+                        <option value="C" class="grade">C</option>
+                        <option value="D" class="grade">D</option>
+                        <option value="F" class="grade">F</option>
+                        <option value="I" class="grade">I</option>
+                    </select>
+                </div>
+            </form>
+            <div class="button-row">
+                <button class="btn btn-primary" id="add-course">Add Course</button>
+                <button class="btn btn-danger" id="remove-course">Remove Last Course</button>
+                <button class="btn btn-success" id="calculate">Calculate GPA</button>
+            </div>
+        </div>
+        <div class="result-div">
+            <p id="result">Your CGPA is:</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
